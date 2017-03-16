@@ -13,6 +13,13 @@
     android:id="@+id/surfaceView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/transparet_efect_imageView"
+        android:layout_width="match_parent"
+        android:alpha="0.5"
+        android:layout_height="match_parent"
+        android:src="@drawable/naruto"/>
 
 
     <com.github.clans.fab.FloatingActionMenu

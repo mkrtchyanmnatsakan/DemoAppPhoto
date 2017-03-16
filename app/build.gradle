@@ -29,4 +29,5 @@ dependencies {
     compile 'com.github.clans:fab:1.6.4'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile 'com.github.Mariovc:ImagePicker:1.0.5'
+    compile 'com.flurgle:camerakit:0.9.15'
 }

@@ -13,7 +13,7 @@ import android.view.SurfaceView;
  * Created by m-dev on 3/15/17.
  */
 
-public class MapView extends SurfaceView implements SurfaceHolder.Callback {
+public class MapView extends com.flurgle.camerakit.CameraView implements SurfaceHolder.Callback {
 
 
 
@@ -28,7 +28,7 @@ public class MapView extends SurfaceView implements SurfaceHolder.Callback {
         super(context, attrs);
         setWillNotDraw(false);
 
-        getHolder().addCallback(this);
+//        getHolder().addCallback(this);
     }
 
     public void onDraw(Canvas canvas) {
@@ -71,7 +71,7 @@ public class MapView extends SurfaceView implements SurfaceHolder.Callback {
         // TODO Callback method contents
     }
 
-    public void setImage(Bitmap background) {
+   /* public void setImage(Bitmap background) {
 //
         scaled = background;
         if (canvas == null) {
@@ -82,17 +82,17 @@ public class MapView extends SurfaceView implements SurfaceHolder.Callback {
             // mSurfaceHolder.unlockCanvasAndPost(canvas);
         }
 
-  /*      float scale = (float) background.getHeight() / (float) getHeight();
+  *//*      float scale = (float) background.getHeight() / (float) getHeight();
         int newWidth = Math.round(background.getWidth() / scale);
         int newHeight = Math.round(background.getHeight() / scale);
         scaled = Bitmap.createScaledBitmap(background, newWidth, newHeight, true);
 
         Paint paint = new Paint();
         paint.setAlpha(42);
-        canvas.drawBitmap(scaled, 0, 0,paint );*/
+        canvas.drawBitmap(scaled, 0, 0,paint );*//*
 
 
-    }
+    }*/
 
     private void drawMyStuff(final Canvas canvas, Bitmap bitmap) {
        /* Random random = new Random();
