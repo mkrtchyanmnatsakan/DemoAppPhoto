@@ -1,6 +1,5 @@
 package com.mno.example.copyart;
 
-import android.*;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,7 +9,6 @@ import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
 import android.graphics.Paint;
@@ -85,7 +83,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        ImagePicker.setMinQuality(600,600);
+        ImagePicker.setMinQuality(getWindowManager().getDefaultDisplay().getWidth(),getWindowManager().getDefaultDisplay().getHeight());
 
 
 
@@ -214,8 +212,17 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.camera_fab:
-                saveCurrentPictureInfo(pictureArrayList,this);
-                saveAllPictures(getCurrentPictureInfo(this));
+//                saveCurrentPictureInfo(pictureArrayList,this);
+//                saveAllPictures(getCurrentPictureInfo(this));
+
+
+                v.setAlpha(0.5f);
+                try {
+                    camera.autoFocus(this);
+
+                } catch (Exception e) {
+                    Toast.makeText(this, "AutoFocus failed", Toast.LENGTH_SHORT).show();
+                }
 
             break;
 
@@ -512,6 +519,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("onActvityReasa","true +++");
 
         Bitmap bitmap = ImagePicker.getImageFromResult(this, requestCode, resultCode, data);
+
 
 
 
