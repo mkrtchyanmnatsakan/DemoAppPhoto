@@ -14,11 +14,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
     <ImageView
+
         android:scaleType="centerCrop"
         android:id="@+id/transparet_efect_imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:alpha="0.5"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:src="@drawable/naruto"/>
 
 
@@ -50,17 +51,6 @@
             android:src="@drawable/ic_camera_enhance_black_24dp"
             style="@style/MenuButtonsStyle" />
 
-
-
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/photo_fab"
-            android:layout_width="wrap_content"
-            android:visibility="visible"
-            fab:fab_label="Photos"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_photo"
-            style="@style/MenuButtonsStyle" />
-
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/my_album_fab"
             android:visibility="visible"
@@ -68,6 +58,56 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_photo_library_black_24dp"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/plus_fab"
+            android:visibility="visible"
+            fab:fab_label="Raise alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/minus_fab"
+            android:visibility="visible"
+            fab:fab_label="Low down alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_minus"
+            style="@style/MenuButtonsStyle" />
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/rotation_by_5_fab"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            fab:fab_label="Rotation right 1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotation_right"
+            style="@style/MenuButtonsStyle" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/replay_by_5_fab"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            fab:fab_label="Rotation left 1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotation_left"
+            style="@style/MenuButtonsStyle" />
+
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/rotation_fab"
+            android:visibility="visible"
+            fab:fab_label="Automatic rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rotation"
             style="@style/MenuButtonsStyle" />
 
         <com.github.clans.fab.FloatingActionButton
