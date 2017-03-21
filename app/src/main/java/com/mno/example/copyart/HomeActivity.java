@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     FloatingActionButton minusFab;
     FloatingActionButton fleshFab;
     FloatingActionMenu menu;
-    private Bitmap narutoBMP;
+    private Bitmap dinoBMP;
 
     PhotoViewAttacher mAttacher;
     static final String PHOTO_TAP_TOAST_STRING = "Photo Tap! X: %.2f %% Y:%.2f %% ID: %d";
@@ -72,9 +72,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         transparentEffectImg = (ImageView) findViewById(R.id.transparet_efect_imageView);
 
 
-        narutoBMP = BitmapFactory.decodeResource(getResources(), R.drawable.dino);
+        dinoBMP = BitmapFactory.decodeResource(getResources(), R.drawable.dino);
 
-        Bitmap scaledBitmap = scaleDown(narutoBMP, 1100, true);
+        Bitmap scaledBitmap = scaleDown(dinoBMP, 1100, true);
 
 
 //        narutoBMP.setWidth(200);

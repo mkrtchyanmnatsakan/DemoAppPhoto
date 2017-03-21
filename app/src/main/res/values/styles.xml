@@ -25,7 +25,7 @@
         <item name="fab_hideAnimation">@anim/jump_to_down</item>
         <item name="fab_shadowColor">#444</item>
         <item name="fab_colorNormal">@color/colorPrimary</item>
-        <item name="fab_colorPressed">@color/colorPrimaryDark</item>
+        <item name="fab_colorPressed">#444</item>
         <item name="fab_colorRipple">@color/colorPrimary</item>
     </style>
 
